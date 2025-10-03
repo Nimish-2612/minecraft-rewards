@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Minecraft Rewards</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <h1 class="title">MINECRAFT REWARDS</h1>
+        <p class="subtitle">Collect skins, items, and exclusive rewards!</p>
+        <div class="characters">
+          <img src="./steve.jpg" alt="Steve" class="char" />
+          <img src="./alex.webp" alt="Alex" class="char" />
+          <img src="./creeper.jpg" alt="Creeper" class="char" />
+        </div>
+      </header>
+
+      <section class="login-card">
+        <h2>Sign In / Register</h2>
+        <form id="authForm">
+          <label for="userid">User ID</label><br />
+          <input
+            id="userid"
+            name="userid"
+            required
+            autocomplete="username"
+          /><br />
+          <label for="password">Password</label><br />
+          <input
+            id="password"
+            name="password"
+            type="password"
+            required
+            autocomplete="current-password"
+          /><br />
+          <div class="buttons">
+            <button type="button" id="btnRegister">Register</button>
+            <button type="button" id="btnLogin">Login</button>
+          </div>
+        </form>
+        <p id="msg" class="msg"></p>
+      </section>
+
+      <footer class="footer">Designed with love for pixel blocks.</footer>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>

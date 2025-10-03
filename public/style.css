@@ -1,0 +1,124 @@
+/* style.css - Minecraft themed */
+:root {
+  --bg: #0b3d0b;
+  --panel: #0f6b0f;
+  --accent: #c5b358;
+  --muted: #e6ffe6;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Press Start 2P", monospace;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(180deg, #071b07 0%, #0a2b0a 100%);
+  color: var(--muted);
+}
+.container {
+  max-width: 980px;
+  margin: 32px auto;
+  padding: 20px;
+}
+
+.container .img{
+  object-fit: cover;
+}
+.hero {
+  text-align: center;
+  padding: 18px;
+  border: 6px solid #3b6b3b;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.15);
+}
+.title {
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin: 6px 0;
+  color: var(--accent);
+  text-shadow: 2px 2px 0 #000;
+}
+.subtitle {
+  font-size: 10px;
+  margin: 6px 0;
+}
+.characters {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 12px;
+}
+.char {
+  width: 88px;
+  height: 88px;
+  image-rendering: pixelated;
+  border: 4px solid #111;
+  border-radius: 8px;
+  background: #9be29b;
+  padding: 6px;
+}
+
+.login-card {
+  margin-top: 22px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(0, 0, 0, 0.06)
+  );
+  padding: 18px;
+  border-radius: 8px;
+  border: 4px solid rgba(0, 0, 0, 0.25);
+}
+.login-card h2 {
+  font-size: 12px;
+  margin: 6px 0;
+  color: var(--accent);
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0 12px;
+  border-radius: 6px;
+  border: 2px solid #233;
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--muted);
+  font-family: inherit;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid #222;
+  background: linear-gradient(180deg, #2b7b2b, #1a5b1a);
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+}
+button:active {
+  transform: translateY(1px);
+}
+.msg {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #ffd;
+}
+.footer {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 9px;
+  color: #9fb;
+}
+@media (min-width: 900px) {
+  .title {
+    font-size: 40px;
+  }
+  .char {
+    width: 120px;
+    height: 120px;
+  }
+}
