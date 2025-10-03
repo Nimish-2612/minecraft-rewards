@@ -63,6 +63,11 @@ app.post('/api/login', (req, res) => {
 // simple health
 app.get('/api/health', (req, res) => res.json({ ok: true, time: new Date().toISOString() }));
 
+app.get('/api/users', (req, res) => {
+  const users = readUsers();
+  res.json(users);
+});
+
 // fallback to index.html for SPA-like experience
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
